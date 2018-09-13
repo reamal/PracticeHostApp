@@ -21,7 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    //assemble.doLast {}
     android.applicationVariants.all { variant ->
         // Copy Release artifact to HostApp's assets and rename
         if (variant.name == "debug") {
@@ -36,8 +36,9 @@ android {
             }
         }
     }
-
 }
+
+
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')

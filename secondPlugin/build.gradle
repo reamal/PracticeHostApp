@@ -3,8 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
 
-
-
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
@@ -22,6 +20,7 @@ android {
         }
     }
 
+    //assemble.doLast {}
     android.applicationVariants.all { variant ->
         // Copy Release artifact to HostApp's assets and rename
         if (variant.name == "debug") {
