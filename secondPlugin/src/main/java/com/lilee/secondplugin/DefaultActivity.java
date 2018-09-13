@@ -3,7 +3,9 @@ package com.lilee.secondplugin;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class DefaultActivity extends AppCompatActivity {
+import com.lilee.pluginlib.ZeusBaseActivity;
+
+public class DefaultActivity extends ZeusBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
