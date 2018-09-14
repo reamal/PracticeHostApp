@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.lilee.hook.plugin"
+        applicationId ="com.lilee.hook2act"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
@@ -22,26 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    android.applicationVariants.all { variant ->
-        // Copy Release artifact to HostApp's assets and rename
-        if (variant.name == "debug") {
-            variant.outputs.each { output ->
-                File originFile = output.outputFile
-                println originFile.absolutePath
-                copy {
-                    from originFile
-                    into "$rootDir/hookactivity/src/main/assets"
-                    rename(originFile.name, "hookPlugin.apk")
-                }
 
-                copy {
-                    from originFile
-                    into "$rootDir/hook2act/src/main/assets"
-                    rename(originFile.name, "hookPlugin.apk")
-                }
-            }
-        }
-    }
 }
 
 dependencies {

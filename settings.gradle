@@ -1,1 +1,1 @@
-include ':app', ':firstPlugin', ':secondPlugin', ':pluginlib', ':hookactivity', ':hookplugin'
+include ':app', ':firstPlugin', ':secondPlugin', ':pluginlib', ':hookactivity', ':hookplugin', ':hook2act'
