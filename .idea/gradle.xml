@@ -15,6 +15,9 @@
             <option value="$PROJECT_DIR$/hookplugin" />
             <option value="$PROJECT_DIR$/pluginlib" />
             <option value="$PROJECT_DIR$/secondPlugin" />
+            <option value="$PROJECT_DIR$/zeus14" />
+            <option value="$PROJECT_DIR$/zeuslib" />
+            <option value="$PROJECT_DIR$/zeusplugin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

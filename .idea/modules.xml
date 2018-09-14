@@ -10,6 +10,9 @@
       <module fileurl="file://$PROJECT_DIR$/hookplugin/hookplugin.iml" filepath="$PROJECT_DIR$/hookplugin/hookplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/pluginlib/pluginlib.iml" filepath="$PROJECT_DIR$/pluginlib/pluginlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/secondPlugin/secondPlugin.iml" filepath="$PROJECT_DIR$/secondPlugin/secondPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeus14/zeus14.iml" filepath="$PROJECT_DIR$/zeus14/zeus14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeuslib/zeuslib.iml" filepath="$PROJECT_DIR$/zeuslib/zeuslib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zeusplugin/zeusplugin.iml" filepath="$PROJECT_DIR$/zeusplugin/zeusplugin.iml" />
     </modules>
   </component>
 </project>
