@@ -1,0 +1,8 @@
+{ 
+    "plugins": [
+        {
+            "PluginService": "com.lilee.zeusplugin.TestService",
+            "StubService": "com.lilee.hookservice.StubService1"
+        }
+    ]
+}

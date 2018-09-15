@@ -12,3 +12,5 @@ Demo 运行在 api 21 模拟器上面。
      加载插件中类的方案2：合并多个dex
 
 * zeus14 包含插件{zeusplugin} zeus classloader 方案
+
+* hookservice 包含插件{zeusplugin}  service 在插件中启动停止。

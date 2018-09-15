@@ -6,6 +6,7 @@ android {
 
 
     defaultConfig {
+        applicationId = "com.lilee.hookservice"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
