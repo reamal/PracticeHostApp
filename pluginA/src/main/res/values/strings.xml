@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirstPlugin</string>
+    <string name="pluginOne_string_hello_plugin">你好，我是firstPlugin中的String</string>
+    <string name="hello_message">hello,plugin one</string>
+</resources>

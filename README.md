@@ -2,6 +2,7 @@
 
 Demo 运行在 api 21 模拟器上面。
 
+* hostApp 包含两个插件 { pluginA , pluginB }
 
 * app 包含两个插件 { firstPlugin , secondPlugin }
   启动插件中的service

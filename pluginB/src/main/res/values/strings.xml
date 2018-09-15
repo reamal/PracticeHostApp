@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SecondPlugin</string>
+    <string name="hello_message">Hello,this is second plugin string.</string>
+</resources>

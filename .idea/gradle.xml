@@ -16,7 +16,11 @@
             <option value="$PROJECT_DIR$/hookplugin" />
             <option value="$PROJECT_DIR$/hookreceiver" />
             <option value="$PROJECT_DIR$/hookservice" />
+            <option value="$PROJECT_DIR$/hostApp" />
+            <option value="$PROJECT_DIR$/pluginA" />
+            <option value="$PROJECT_DIR$/pluginB" />
             <option value="$PROJECT_DIR$/pluginlib" />
+            <option value="$PROJECT_DIR$/pluginlibA" />
             <option value="$PROJECT_DIR$/secondPlugin" />
             <option value="$PROJECT_DIR$/zeus14" />
             <option value="$PROJECT_DIR$/zeuslib" />

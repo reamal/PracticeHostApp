@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="default"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="normal_call"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_extends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="extends_call"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_callback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="callBack_call"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_getResStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getRes"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_fist_plugin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="firstPlugin" />
+
+        <Button
+            android:id="@+id/btn_second_plugin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="secondPlugin" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_robot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="test"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_startTestService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="startTestService"/>
+
+</LinearLayout>

@@ -11,7 +11,11 @@
       <module fileurl="file://$PROJECT_DIR$/hookplugin/hookplugin.iml" filepath="$PROJECT_DIR$/hookplugin/hookplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookreceiver/hookreceiver.iml" filepath="$PROJECT_DIR$/hookreceiver/hookreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookservice/hookservice.iml" filepath="$PROJECT_DIR$/hookservice/hookservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hostApp/hostApp.iml" filepath="$PROJECT_DIR$/hostApp/hostApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginA/pluginA.iml" filepath="$PROJECT_DIR$/pluginA/pluginA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginB/pluginB.iml" filepath="$PROJECT_DIR$/pluginB/pluginB.iml" />
       <module fileurl="file://$PROJECT_DIR$/pluginlib/pluginlib.iml" filepath="$PROJECT_DIR$/pluginlib/pluginlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pluginlibA/pluginlibA.iml" filepath="$PROJECT_DIR$/pluginlibA/pluginlibA.iml" />
       <module fileurl="file://$PROJECT_DIR$/secondPlugin/secondPlugin.iml" filepath="$PROJECT_DIR$/secondPlugin/secondPlugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/zeus14/zeus14.iml" filepath="$PROJECT_DIR$/zeus14/zeus14.iml" />
       <module fileurl="file://$PROJECT_DIR$/zeuslib/zeuslib.iml" filepath="$PROJECT_DIR$/zeuslib/zeuslib.iml" />

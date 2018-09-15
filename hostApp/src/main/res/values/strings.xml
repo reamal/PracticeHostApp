@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DHostApp</string>
+    <string name="default_string">hostApp默认的字符串</string>
+</resources>
