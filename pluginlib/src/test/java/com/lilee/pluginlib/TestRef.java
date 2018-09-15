@@ -3,12 +3,14 @@ package com.lilee.pluginlib;
 
 import com.lilee.testref.AMN;
 import com.lilee.testref.ClassB2Interface;
+import com.lilee.testref.ClassB2Mock;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.robolectric.shadows.ShadowLog;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Proxy;
 
 public class TestRef {
 
@@ -27,6 +29,7 @@ public class TestRef {
         Field mInstanceFiled = singleton.getDeclaredField("mInstance");
         mInstanceFiled.setAccessible(true);
 
+        ShadowLog.d(TAG, "singleton.getSimpleName() : " + singleton.getSimpleName());
         ShadowLog.d(TAG, "mInstanceFiled.getName() : " + mInstanceFiled.getName());
 
         Class<?> amnClass = Class.forName("com.lilee.testref.AMN");
@@ -37,16 +40,23 @@ public class TestRef {
 
         gDefaultFiled.setAccessible(true);
 
-        AMN.InnerSingleton gDefault = (AMN.InnerSingleton) gDefaultFiled.get(null);
+        Object gDefaultObject = gDefaultFiled.get(null);
 
-        Object o = mInstanceFiled.get(gDefault);
-        ShadowLog.e(TAG, "o == null?" + (o == null));
+        //返回的o为null
+        Object o = mInstanceFiled.get(gDefaultObject);
+        int id = AMN.getDefault().getId();
+        ShadowLog.d(TAG, "id : " + id);
 
-        ClassB2Interface classB2Interface = gDefault.get();
 
-        ShadowLog.d(TAG, "gDefault.getClass() : " + gDefault.getClass() + " , gDefault == null ? " + (gDefault == null));
-        ShadowLog.d(TAG, "classB2Interface.getClass() : " + classB2Interface.getClass() + " , classB2Interface == null ? " + (classB2Interface == null));
+        Class<?> classB2InterfaceClass = Class.forName("com.lilee.testref.ClassB2Interface");
 
-        ShadowLog.d(TAG, "classB2Interface.getId() : " + classB2Interface.getId());
+        Object proxy = Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader()
+                , new Class[]{classB2InterfaceClass}, new ClassB2Mock(o));
+
+        mInstanceFiled.set(gDefaultObject, proxy);
+
+        //检验代理是否成功
+        int id2 = AMN.getDefault().getId();
+        ShadowLog.d(TAG, "id2 : " + id2);
     }
 }
