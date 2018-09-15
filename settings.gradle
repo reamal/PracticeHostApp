@@ -1,1 +1,1 @@
-include ':app', ':firstPlugin', ':secondPlugin', ':pluginlib', ':hookactivity', ':hookplugin', ':hook2act', ':zeus14', ':zeuslib', ':zeusplugin'
+include ':app', ':firstPlugin', ':secondPlugin', ':pluginlib', ':hookactivity', ':hookplugin', ':hook2act', ':zeus14', ':zeuslib', ':zeusplugin', ':hookservice'
