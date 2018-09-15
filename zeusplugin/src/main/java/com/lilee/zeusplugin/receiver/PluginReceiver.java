@@ -11,10 +11,10 @@ public class PluginReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context,
-                "接收到100万" + intent.getAction() + intent.getStringExtra("msg"),
-                Toast.LENGTH_LONG).show();
+//        Toast.makeText(context,
+//                "接收到100万" + intent.getAction() + intent.getStringExtra("msg"),
+//                Toast.LENGTH_LONG).show();
         Log.d(TAG,"PluginReceiver onReceive ");
-        context.sendBroadcast(new Intent("plugin_receiver_two"));
+        context.sendBroadcast(new Intent("plugin_receiver2"));
     }
 }
