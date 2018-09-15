@@ -16,3 +16,5 @@ Demo 运行在 api 21 模拟器上面。
 * hookservice 包含插件{zeusplugin}  service 在插件中启动停止。
 
 * hookreceiver 包含插件{zeusplugin}  插件中的静态广播解决方案
+
+* hookprovider 包含插件{zeusplugin}  插件中的内容提供者解决方案

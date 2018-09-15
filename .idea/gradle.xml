@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/firstPlugin" />
             <option value="$PROJECT_DIR$/hook2act" />
             <option value="$PROJECT_DIR$/hookactivity" />
+            <option value="$PROJECT_DIR$/hookcprovider" />
             <option value="$PROJECT_DIR$/hookplugin" />
             <option value="$PROJECT_DIR$/hookreceiver" />
             <option value="$PROJECT_DIR$/hookservice" />

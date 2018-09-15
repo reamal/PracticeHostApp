@@ -44,6 +44,11 @@
             <meta-data android:name="oldAction" android:value="plugin_receiver2"></meta-data>
         </receiver>
 
+        <provider
+            android:authorities="Lilee"
+            android:name=".CProvider"
+            android:exported="true">
+        </provider>
     </application>
 
 </manifest>
