@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lilee.zeusplugin">
+    package="com.lilee.hookreceiver">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:name=".HookApp"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestActivity">
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,33 +19,25 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".TestService"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name=".PluginActivity"></activity>
-
-        <receiver
-            android:name=".receiver.PluginReceiver"
+        <receiver android:name=".StubReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="plugin_receiver_one" />
+                <action android:name="plugin_receiver1"/>
             </intent-filter>
-            <meta-data android:name="oldAction" android:value="plugin_receiver1"></meta-data>
-        </receiver>
-
-        <receiver
-            android:name=".receiver.PluginReceiver2"
-            android:enabled="true"
-            android:exported="true">
             <intent-filter>
-                <action android:name="plugin_receiver_two" />
+                <action android:name="plugin_receiver2"/>
             </intent-filter>
-            <meta-data android:name="oldAction" android:value="plugin_receiver2"></meta-data>
+            <intent-filter>
+                <action android:name="plugin_receiver3"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="plugin_receiver4"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="plugin_receiver5"/>
+            </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

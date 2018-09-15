@@ -38,6 +38,12 @@ android {
                     into "$rootDir/hookservice/src/main/assets"
                     rename(originFile.name, "zeusPlugin.apk")
                 }
+
+                copy {
+                    from originFile
+                    into "$rootDir/hookreceiver/src/main/assets"
+                    rename(originFile.name, "zeusPlugin.apk")
+                }
             }
         }
     }

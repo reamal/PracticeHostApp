@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/hook2act/hook2act.iml" filepath="$PROJECT_DIR$/hook2act/hook2act.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookactivity/hookactivity.iml" filepath="$PROJECT_DIR$/hookactivity/hookactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookplugin/hookplugin.iml" filepath="$PROJECT_DIR$/hookplugin/hookplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hookreceiver/hookreceiver.iml" filepath="$PROJECT_DIR$/hookreceiver/hookreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/hookservice/hookservice.iml" filepath="$PROJECT_DIR$/hookservice/hookservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/pluginlib/pluginlib.iml" filepath="$PROJECT_DIR$/pluginlib/pluginlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/secondPlugin/secondPlugin.iml" filepath="$PROJECT_DIR$/secondPlugin/secondPlugin.iml" />
