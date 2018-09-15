@@ -9,6 +9,7 @@ import com.lilee.hookservice.HookApp;
 
 public class MockHClass  implements Handler.Callback{
 
+    private static final String TAG = "liTag";
     Handler mBase;
 
     public MockHClass(Handler base) {
@@ -18,7 +19,7 @@ public class MockHClass  implements Handler.Callback{
     @Override
     public boolean handleMessage(Message msg) {
 
-        Log.d("baobao4321", String.valueOf(msg.what));
+        Log.d(TAG, "handleMessage : " + String.valueOf(msg.what));
         switch (msg.what) {
 
             // ActivityThread里面 "CREATE_SERVICE" 这个字段的值是114

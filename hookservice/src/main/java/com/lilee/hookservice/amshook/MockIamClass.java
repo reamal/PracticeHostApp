@@ -79,6 +79,30 @@ public class MockIamClass implements InvocationHandler {
 
             Log.d(TAG, "hook success");
             return method.invoke(mBase, args);
+        }else if ("bindService".equals(method.getName())){
+            int index = 0;
+            for (int i = 0; i < args.length; i++) {
+                if (args[i] instanceof Intent) {
+                    index = i;
+                    break;
+                }
+            }
+
+            //get StubService form UPFApplication.pluginServices
+            Intent rawIntent = (Intent) args[index];
+            String rawServiceName = rawIntent.getComponent().getClassName();
+            String stubServiceName = HookApp.pluginServices.get(rawServiceName);
+
+            // replace Plugin Service of StubService
+            ComponentName componentName = new ComponentName(stubPackage, stubServiceName);
+            Intent newIntent = new Intent();
+            newIntent.setComponent(componentName);
+
+            // Replace Intent, cheat AMS
+            args[index] = newIntent;
+
+            Log.d(TAG, "hook success");
+            return method.invoke(mBase, args);
         }
 
         return method.invoke(mBase,args);

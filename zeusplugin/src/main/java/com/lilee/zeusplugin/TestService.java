@@ -2,10 +2,23 @@ package com.lilee.zeusplugin;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import com.lilee.IMyInterface;
+
 public class TestService extends Service {
+
+    private MyBinder binder = new MyBinder();
+    private int count;
+
+    public class MyBinder extends Binder implements IMyInterface {
+        public int getCount() {
+            return count;
+        }
+    }
+
     public TestService() {
     }
 
@@ -19,7 +32,15 @@ public class TestService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        return null;
+        Log.e(TAG, "Service is binded");
+        count = count + 1;
+        return binder;
+    }
+
+    @Override
+    public boolean onUnbind(Intent intent) {
+        Log.e(TAG, "Service is onUnbinded");
+        return super.onUnbind(intent);
     }
 
     @Override
