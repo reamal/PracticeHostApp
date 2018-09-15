@@ -14,3 +14,5 @@ Demo 运行在 api 21 模拟器上面。
 * zeus14 包含插件{zeusplugin} zeus classloader 方案
 
 * hookservice 包含插件{zeusplugin}  service 在插件中启动停止。
+
+* hookreceiver 包含插件{zeusplugin}  插件中的静态广播解决方案
